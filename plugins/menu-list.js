@@ -231,7 +231,6 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
 ┃⬡ Mode : ${global.opts['self'] ? 'Self' : 'publik'}
 ┃⬡ ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} Chat Terbanned
 ┃⬡ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length} Pengguna Terbanned
-┃⬡ スパムしないでください
 ┗━━━━━━━━━━━━━━━⬣`,
             buttonText: 'LIST MENU',
             listType: 1,
@@ -241,7 +240,7 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
               {
                 "rows": [{
                   "title": `OWNER BOT`,
-                  "description": "Nomor Pemilik Bot Chat P/Meminta Save Tidak Akan Di Respon",
+                  "description": "Nomor Pemilik Bot",
                   "rowId": `.owner`
                 },{
                   "title": "INFO BOT",
@@ -416,8 +415,8 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
            hydratedFooterText: wm,
            hydratedButtons: [{
             urlButton: {
-               displayText: 'MY WEBSITE',
-               url: 'https://Hyzerr.github.io/'
+               displayText: 'NagatoroBot',
+               url: 'https://chat.whatsapp.com/HUsHDmTaP8y7vYbtkqKyWb'
              }
 
            },
