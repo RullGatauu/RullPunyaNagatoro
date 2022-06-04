@@ -2,7 +2,7 @@ let limit = 30
 let fetch = require('node-fetch')
 const { servers, yta } = require('../lib/y2mate')
 let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) => {
-  if (!args || !args[0]) throw `contoh:\n${usedPrefix + command} https://www.youtube.com/watch?v=yxDdj_G9uRY`
+  if (!args || !args[0]) throw `contoh:\n${usedPrefix + command} https://www.youtube.com/watch?v=mxDdj_G9LRY`
   let chat = global.db.data.chats[m.chat]
   let server = (args[1] || servers[0]).toLowerCase()
   let { dl_link, thumb, title, filesize, filesizeF } = await yta(args[0], servers.includes(server) ? server : servers[0])
@@ -24,7 +24,7 @@ let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) =
             description: 'Now Playing...',
             mediaType: 2,
           thumbnail: await (await fetch('https://telegra.ph/file/76f08bd0aeb06c3e0c0d5.jpg')).buffer(),
-         mediaUrl: `https://youtube.com/watch?v=uIedYGN3NQQ`
+         mediaUrl: `https://chat.whatsapp.com/HUsHDmTaP8y7vYbtkqKyWb`
         }
      }
   })
