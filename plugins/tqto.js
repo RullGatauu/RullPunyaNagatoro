@@ -11,16 +11,8 @@ bear = "Source Code"
 ye = `@${m.sender.split`@`[0]}`
 let esce = `
 BIG THANKS TO
-Nurutomo
-https://github.com/Nurutomo
-Ariffb25
-https://github.com/ariffb25
-Letta-Sama
-https://github.com/Kannachann
-Fahri
-https://github.com/FahriAdison
-Ahmad
-https://github.com/Luigmntng`
+• Ortu
+• My Friend`
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {
